@@ -1,0 +1,153 @@
+:root {
+  /* ===== PALETA DE COLORES ===== */
+  /* Colores principales (esquema GitHub) */
+  --color-primario: #0366d6;
+  --color-primario-hover: #035fc7;
+  --color-secundario: #586069;
+  --color-terciario: #24292e;
+
+  /* Fondos y superficies */
+  /* uso: background-color: var(--fondo-primario); */
+  --fondo-primario: #ffffff;
+  --fondo-secundario: #f6f8fa;
+  --fondo-terciario: #0366d6;
+
+  /* Transparencias para overlays y efectos */
+  /* uso: background-color: var(--fondo-primario-transparente); */
+  --fondo-primario-transparente: rgba(255, 255, 255, 0.9);
+  --fondo-secundario-transparente: rgba(246, 248, 250, 0.8);
+
+  /* Colores de texto */
+  /* uso: color: var(--texto-primario); */
+  --texto-primario: #24292e;
+  --texto-secundario: #586069;
+  --texto-terciario: #0366d6;
+
+  /* Estados y feedback */
+  /* uso: color: var(--exito); */
+  --exito: #28a745;
+  --error: #cb2431;
+  --advertencia: #ffd33d;
+
+    /* ===== TIPOGRAFÍA ===== */
+    /* uso: font-family: var(--fuente-principal); */
+  --fuente-principal: 'Roboto', sans-serif;
+  /* uso: font-weight: var(--peso-bold); */
+  --peso-light: 300;
+  --peso-regular: 400;
+  --peso-medium: 500;
+  --peso-bold: 700;
+
+  /* ===== ESCALA TIPOGRÁFICA ===== */
+  /* uso: font-size: var(--texto-3xl); */
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.875rem;
+  --texto-base: 1rem;
+  --texto-lg: 1.125rem;
+  --texto-xl: 1.25rem;
+  --texto-2xl: 1.5rem;
+  --texto-3xl: 1.875rem;
+  --texto-4xl: 2.25rem;
+  --texto-5xl: 3rem;
+
+  /* ===== SISTEMA DE ESPACIADO ===== */
+  --espacio-1: 0.25rem;
+  --espacio-2: 0.5rem;
+  --espacio-3: 0.75rem;
+  --espacio-4: 1rem;
+  --espacio-5: 1.25rem;
+  --espacio-6: 1.5rem;
+  --espacio-8: 2rem;
+  --espacio-10: 2.5rem;
+  --espacio-12: 3rem;
+  --espacio-16: 4rem;
+  --espacio-20: 5rem;
+
+  /* ===== BORDER RADIUS ===== */
+  --radio-sm: 0.25rem;
+  --radio-base: 0.375rem;
+  --radio-md: 0.5rem;
+  --radio-lg: 0.75rem;
+  --radio-xl: 1rem;
+  --radio-full: 9999px;
+
+  /* ===== BREAKPOINTS RESPONSIVE ===== */
+  --mobile: 640px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1280px;
+}
+
+/* ===== RESET Y ESTILOS BASE ===== */
+* {
+  /* Reset CSS básico */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Estilos generales heredables */
+  color: var(--texto-primario);
+  font-family: var(--fuente-principal);
+  font-weight: var(--peso-regular);
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Estilos base del body */
+  line-height: 1.5;
+  background-color: var(--fondo-primario);
+  min-height: 100%;
+  position: relative;
+}
+
+/* ===== CLASES UTILITARIAS ===== */
+.titulo {
+  font-weight: var(--peso-bold);
+}
+
+html {
+  /* background-color: var(--fondo-primario); */
+  background-color: red;
+}
+
+.encabezado {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navegacion {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--fondo-secundario-transparente);
+  padding: 1rem;
+}
+
+.navegacion__enlace {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.navegacion__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-3xl);
+  color: var(--texto-primario);
+  text-shadow: var(--fondo-secundario) 1px 1px 1px; /* Sombra en el texto */
+}
+
+.enlaces {
+  display: flex;
+  list-style: none; /* Elimina los puntos */
+  gap: 1rem;
+}
+
+.enlaces a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: var(--color-secundario);
+    font-size: var(--texto-lg); /* Tamaño de fuente */
+    font-weight: var(--peso-medium); /* Peso de la fuente */
+}
+
