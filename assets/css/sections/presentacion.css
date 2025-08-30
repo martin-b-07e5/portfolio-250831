@@ -1,12 +1,14 @@
-/* === Presentación === */
+/* assets/css/sections/presentacion.css */
+
+/* ===== Presentación ===== */
 .presentacion {
-  /* padding: var(--espacio-10) var(--espacio-5); */
   padding-top: var(--espacio-10);
   padding-left: var(--espacio-5);
   padding-bottom: var(--espacio-1);
   padding-right: var(--espacio-5);
 }
 
+/* contenedor gral */
 .presentacion__contenedor_info {
   display: flex;
   flex-direction: column;
@@ -42,7 +44,8 @@
   line-height: 1.6;
 }
 
-/* -- Botones -- */
+/* === Botones === */
+/* contenedor de botones */
 .presentacion__contenedor_botones {
   display: flex;
   justify-content: center;
@@ -78,4 +81,3 @@
   border-color: var(--color-primario-hover);
   color: red;
 }
-/* -- end Botones -- */

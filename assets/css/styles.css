@@ -1,3 +1,5 @@
+/* assets/css/styles.css */
+
 @import url('./variables.css');
 @import url('./reset.css');
 @import url('./header.css');
@@ -6,6 +8,7 @@
 @import url('./sections/proyectos.css');
 @import url('./footer.css');
 
+/* ===== main ===== */
 .principal {
   padding-top: 20px;
   /* background-color: aqua; */
