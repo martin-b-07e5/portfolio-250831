@@ -15,7 +15,8 @@
   /* Transparencias para overlays y efectos */
   /* uso: background-color: var(--fondo-primario-transparente); */
   --fondo-primario-transparente: rgba(255, 255, 255, 0.9);
-  --fondo-secundario-transparente: rgba(246, 248, 250, 0.8);
+  --fondo-secundario-transparente: rgba(246, 248, 250, 0.7);
+  --fondo-terciario-transparente: rgba(3, 102, 214, 0.5);
 
   /* Colores de texto */
   /* uso: color: var(--texto-primario); */
@@ -110,11 +111,11 @@ body {
   font-weight: var(--peso-bold);
 }
 
-
 /* ===== FIXED HEADER ===== */
 .encabezado {
   position: fixed;
   width: 100%;
+  height: 40px; /* Reduce altura */
   top: 0;
   left: 0;
   background-color: var(--fondo-primario-transparente);
@@ -123,21 +124,21 @@ body {
 #presentacion,
 #sobre-mi,
 #proyectos {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 40px;  /* importante no borrar */
   /* Alternativa. */
-  /* padding-top: 80px; */
-  /* margin-top: -80px; */
+  /* padding-top: 40px; */
+  /* margin-top: -40px; */
 }
 /* ===== END FIXED HEADER ===== */
 
-
+/* ===== HEADER ===== */
 .navegacion {
-  height: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--fondo-secundario-transparente);
-  padding: 1rem;
+  padding: 0.5rem;
+  height: 100%;
 }
 
 .navegacion__enlace {
@@ -172,9 +173,98 @@ body {
 
 /* ===== MAIN ===== */
 .principal {
-  padding-top: 80px;
+  padding-top: 20px;
   background-color: aqua;
 }
+
+/* === Presentación === */
+.presentacion {
+  padding: var(--espacio-10) var(--espacio-5);
+}
+
+.presentacion__contenedor_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--espacio-4);
+  gap: var(--espacio-1);
+  margin: 0 auto;
+  background: var(--fondo-terciario-transparente);
+  border: solid 1px var(--color-primario);
+  border-radius: var(--radio-lg);
+}
+
+.presentacion__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-4xl);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-1);
+}
+
+.presentacion__subtitulo {
+  font-weight: var(--peso-medium);
+  font-size: var(--texto-3xl);
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-2);
+}
+
+.presentacion__parrafo {
+  font-weight: var(--peso-regular);
+  font-size: var(--texto-lg);
+  color: var(--texto-secundario);
+  margin-bottom: var(--espacio-3);
+  line-height: 1.6;
+}
+
+/* -- Botones -- */
+.presentacion__contenedor_botones {
+  display: flex;
+  justify-content: center;
+  gap: var(--espacio-4);
+  flex-wrap: wrap;
+}
+
+.boton {
+  display: inline-block; /* Para que se comporten como botones */
+  padding: var(--espacio-3) var(--espacio-5);
+  text-decoration: none;
+  border-radius: var(--radio-base);
+  font-weight: var(--peso-medium);
+  font-size: var(--texto-base);
+  border: 2px solid var(--color-primario);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.boton.boton--oscuro {
+  background-color: var(--color-primario);
+  color: white;
+}
+
+.boton.boton--oscuro:hover {
+  background-color: var(--color-primario-hover);
+  border-color: var(--color-primario-hover);
+  color: red;
+}
+/* -- end Botones -- */
+
+
+
+
+/* === Sobre mi === */
+
+
+/* === Proyectos === */
+
+
+
 
 /* ===== FOOTER ===== */
 .pie_de_pagina {
