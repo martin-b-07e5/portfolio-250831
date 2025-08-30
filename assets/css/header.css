@@ -1,0 +1,63 @@
+/* ===== CLASES UTILITARIAS ===== */
+.titulo {
+  font-weight: var(--peso-bold);
+}
+
+/* ===== FIXED HEADER ===== */
+.encabezado {
+  position: fixed;
+  width: 100%;
+  height: 40px; /* Reduce altura */
+  top: 0;
+  left: 0;
+  background-color: var(--fondo-primario-transparente);
+}
+
+#presentacion,
+#sobre-mi,
+#proyectos {
+  scroll-margin-top: 40px;  /* importante no borrar */
+  /* Alternativa. */
+  /* padding-top: 40px; */
+  /* margin-top: -40px; */
+}
+/* ===== END FIXED HEADER ===== */
+
+/* ===== HEADER ===== */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--fondo-secundario-transparente);
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.navegacion__enlace {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.navegacion__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-3xl);
+  color: var(--texto-primario);
+  text-shadow: var(--fondo-secundario) 1px 1px 1px; /* Sombra en el texto */
+}
+
+.enlaces {
+  display: flex;
+  list-style: none; /* Elimina los puntos */
+  gap: 1rem;
+}
+
+.enlaces__item {
+  /* background-color: var(--fondo-terciario); */
+  background-color: var(--fondo-secundario);
+}
+
+.enlaces__enlace {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: var(--color-secundario);
+    font-size: var(--texto-lg); /* Tamaño de fuente */
+    font-weight: var(--peso-medium); /* Peso de la fuente */
+}
