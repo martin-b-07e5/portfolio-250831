@@ -33,10 +33,6 @@ async function loadAllComponents() {
 
     // Cargar sub-componentes de about
     await loadHTMLComponent(
-      "about-header-content",
-      "./components/about/about-header.html"
-    );
-    await loadHTMLComponent(
       "about-description-content",
       "./components/about/about-description.html"
     );
