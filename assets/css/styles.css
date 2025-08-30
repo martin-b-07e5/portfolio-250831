@@ -174,12 +174,16 @@ body {
 /* ===== MAIN ===== */
 .principal {
   padding-top: 20px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 /* === Presentación === */
 .presentacion {
-  padding: var(--espacio-10) var(--espacio-5);
+  /* padding: var(--espacio-10) var(--espacio-5); */
+  padding-top: var(--espacio-10);
+  padding-left: var(--espacio-5);
+  padding-bottom: var(--espacio-1);
+  padding-right: var(--espacio-5);
 }
 
 .presentacion__contenedor_info {
@@ -189,8 +193,8 @@ body {
   align-items: flex-start;
   padding: var(--espacio-4);
   gap: var(--espacio-1);
-  margin: 0 auto;
-  background: var(--fondo-terciario-transparente);
+  margin: 0 1rem;
+  background: var(--fondo-primario);
   border: solid 1px var(--color-primario);
   border-radius: var(--radio-lg);
 }
@@ -331,15 +335,85 @@ body {
 
 
 
-
-
-
-
-
-
-
 /* === Proyectos === */
+.articulo {
+  padding: var(--espacio-2) var(--espacio-5);
+}
 
+.articulo__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--espacio-4);
+  gap: var(--espacio-1);
+  margin: 0 1rem;
+  background: var(--fondo-primario-transparente);
+  border: solid 1px var(--color-primario);
+  border-radius: var(--radio-lg);
+}
+
+.contenedor_tarjetas_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--espacio-6);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: var(--fondo-primario);
+  border: 1px solid var(--fondo-terciario);
+  border-radius: var(--radio-lg);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta__imagen {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--fondo-terciario);
+}
+
+.tarjeta__contenido {
+  padding: var(--espacio-4);
+}
+
+.tarjeta__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-xl);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-2);
+}
+
+.tarjeta__divisor {
+  display: block;
+  height: 2px;
+  background: var(--color-primario);
+  margin: var(--espacio-3) 0;
+  width: 50px;
+}
+
+.tarjeta__parrafo {
+  font-weight: var(--peso-regular);
+  font-size: var(--texto-base);
+  color: var(--texto-secundario);
+  line-height: 1.6;
+  margin-bottom: var(--espacio-4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor_tarjetas_grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
