@@ -1,0 +1,72 @@
+/* === Sobre mi === */
+/* === About === */
+.articulo__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-4xl);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-2);
+}
+
+/* primero la descripción y debajo los hobbies */
+.articulo__contenedor_descripciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-8);
+  margin: 0 auto;
+  padding: var(--espacio-6);
+}
+
+/* descripción a la derecha de la imagen */
+.seccion_descripcion {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-8);
+  padding: var(--espacio-6);
+  background: var(--fondo-secundario);
+  border-radius: var(--radio-lg);
+  border: 1px solid var(--fondo-terciario);
+}
+
+/* flex: 0 0 300px = No crece (0), no encoge (0), tamaño base 300px */
+.seccion_descripcion__porta_retrato {
+  flex: 0 0 300px;
+}
+
+/* para que achique la imagen */
+.seccion_descripcion__imagen {
+  width: 100%;
+  max-width: 300px;
+  border-radius: var(--radio-lg);
+  border: 2px solid var(--color-primario);
+}
+
+.seccion_descripcion__info {
+  flex: 1;
+}
+
+.seccion_descripcion__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-2xl);
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-4);
+}
+
+.seccion_descripcion__parrafo {
+  font-weight: var(--peso-regular);
+  font-size: var(--texto-base);
+  color: var(--texto-secundario);
+  margin-bottom: var(--espacio-4);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seccion_descripcion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seccion_descripcion__porta_retrato {
+    flex: 0 0 auto;
+  }
+}

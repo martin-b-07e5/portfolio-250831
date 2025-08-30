@@ -1,0 +1,6 @@
+/* ===== FOOTER ===== */
+.pie_de_pagina {
+  background-color: var(--fondo-terciario);
+  padding: 1rem;
+  text-align: center;
+}
