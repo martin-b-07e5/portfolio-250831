@@ -13,13 +13,9 @@
   background-color: var(--fondo-primario-transparente);
 }
 
-#presentacion,
-#sobre-mi,
 #proyectos {
-  scroll-margin-top: 40px;  /* importante no borrar */
-  /* Alternativa. */
-  /* padding-top: 40px; */
-  /* margin-top: -40px; */
+  /* importante no borrar */
+  scroll-margin-top: 40px;
 }
 /* ===== END FIXED HEADER ===== */
 
@@ -34,30 +30,31 @@
 }
 
 .navegacion__enlace {
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  /* Elimina el subrayado del enlace */
+  text-decoration: none;
 }
 
 .navegacion__titulo {
   font-weight: var(--peso-bold);
   font-size: var(--texto-3xl);
   color: var(--texto-primario);
-  text-shadow: var(--fondo-secundario) 1px 1px 1px; /* Sombra en el texto */
+  text-shadow: var(--fondo-secundario) 1px 1px 1px;
 }
 
 .enlaces {
   display: flex;
-  list-style: none; /* Elimina los puntos */
+  /* Elimina los puntos */
+  list-style: none;
   gap: 1rem;
 }
 
 .enlaces__item {
-  /* background-color: var(--fondo-terciario); */
   background-color: var(--fondo-secundario);
 }
 
 .enlaces__enlace {
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none;
     color: var(--color-secundario);
-    font-size: var(--texto-lg); /* Tamaño de fuente */
-    font-weight: var(--peso-medium); /* Peso de la fuente */
+    font-size: var(--texto-lg);
+    font-weight: var(--peso-medium);
 }
