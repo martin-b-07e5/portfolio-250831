@@ -1,22 +1,23 @@
 :root {
-  /* ===== PALETA DE COLORES ===== */
-  /* Colores principales (esquema GitHub) */
-  --color-primario: #0366d6;
-  --color-primario-hover: #035fc7;
-  --color-secundario: #586069;
-  --color-terciario: #24292e;
 
-  /* Fondos y superficies */
-  /* uso: background-color: var(--fondo-primario); */
-  --fondo-primario: #ffffff;
-  --fondo-secundario: #f6f8fa;
-  --fondo-terciario: #0366d6;
+/* ===== PALETA DE COLORES ===== */
+/* Colores principales (esquema GitHub) */
+--color-primario: #0366d6;          /* Azul GitHub */
+--color-primario-hover: #035fc7;    /* Azul más oscuro */
+--color-secundario: #586069;        /* Gris oscuro/texto secundario */
+--color-terciario: #24292e;         /* Negro azulado/texto principal */
 
-  /* Transparencias para overlays y efectos */
-  /* uso: background-color: var(--fondo-primario-transparente); */
-  --fondo-primario-transparente: rgba(255, 255, 255, 0.9);
-  --fondo-secundario-transparente: rgba(246, 248, 250, 0.7);
-  --fondo-terciario-transparente: rgba(3, 102, 214, 0.5);
+/* Fondos y superficies con tonalidades azules */
+/* uso: background-color: var(--fondo-primario); */
+--fondo-primario: #ffffff;          /* Blanco puro */
+--fondo-secundario: #f0f7ff;        /* Azul muy claro */
+--fondo-terciario: #e1efff;         /* Azul claro */
+
+/* Transparencias para overlays y efectos con tonalidades azules */
+/* uso: background-color: var(--fondo-primario-transparente); */
+--fondo-primario-transparente: #f8fbff;    /* Azul blanquecino muy claro */
+--fondo-secundario-transparente: #e8f2ff;  /* Azul muy claro translúcido */
+--fondo-terciario-transparente: #d4e7ff;   /* Azul claro */
 
   /* Colores de texto */
   /* uso: color: var(--texto-primario); */

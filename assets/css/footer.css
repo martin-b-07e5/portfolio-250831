@@ -15,6 +15,8 @@
   display: flex;
   flex-direction: column;
   min-width: 200px;
+  justify-content: flex-start; /* Alinea al inicio verticalmente */
+  align-items: center; /* Centra horizontalmente */
 }
 
 /* son los h4 (mis redes, contacto, secciones) */
@@ -60,22 +62,28 @@
 }
 
 .pie_de_pagina .enlaces__enlace_footer:hover {
-  color: var(--link)
+  color: var(--color-primario)
 }
-
 
 /* Para todos los anchors con esas clases dentro del footer */
 .pie_de_pagina .enlaces__enlace.enlaces__enlace_footer {
-  background-color: var(--fondo-terciario);
+  background-color: transparent;
 }
 
-
+/* linkedin, github */
 .pie_de_pagina .enlaces__icono {
   width: 48px;
   height: 48px;
   object-fit: contain;
 }
 
+/* Efecto hover para el icono */
+.pie_de_pagina .enlaces__icono:hover {
+  transform: scale(1.1); /* Agrandar ligeramente */
+  opacity: 0.8; /* Leve transparencia */
+}
+
+/* copyright */
 .pie_de_pagina__copyright {
   width: 100%;
   text-align: center;
@@ -84,6 +92,7 @@
   border-top: 1px solid var(--fondo-terciario);
 }
 
+/* copyright paragraph */
 .pie_de_pagina__parrafo {
   font-size: var(--texto-base);
   color: var(--texto-secundario);
@@ -101,5 +110,13 @@
 
   .pie_de_pagina .enlaces_redes {
     justify-content: center;
+  }
+}
+
+/* Centrar el contenido del footer en pantallas grandes */
+@media (min-width: 769px) {
+  .pie_de_pagina {
+    justify-content: center; /* Cambia de space-around a center */
+    gap: 4rem; /* Aumenta el espacio entre columnas */
   }
 }

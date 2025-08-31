@@ -69,7 +69,8 @@
 .boton:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: red;
+  /* color: red; */
+  color: var(--color-primario-hover);
 }
 
 .boton.boton--oscuro {
@@ -80,5 +81,6 @@
 .boton.boton--oscuro:hover {
   background-color: var(--color-primario-hover);
   border-color: var(--color-primario-hover);
-  color: red;
+  /* color: red; */
+  color: var(--color-terciario);
 }
