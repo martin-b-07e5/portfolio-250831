@@ -5,8 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
   background-color: var(--fondo-terciario);
 }
 
@@ -16,7 +16,7 @@
   flex-direction: column;
   min-width: 200px;
   justify-content: flex-start; /* Alinea al inicio verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  align-items: center;
 }
 
 /* son los h4 (mis redes, contacto, secciones) */
@@ -24,7 +24,7 @@
   font-weight: var(--peso-bold);
   font-size: var(--texto-lg);
   color: var(--texto-primario);
-  margin-bottom: var(--espacio-4);
+  margin-bottom: var(--espacio-1);
 }
 
 /* Específico para listas dentro del footer */
@@ -44,18 +44,18 @@
 .pie_de_pagina .enlaces_vertical {
   display: flex;
   flex-direction: column;
-  gap: var(--espacio-2);
+  gap: var(--espacio-1);
 }
 
 /* son lo li */
 .pie_de_pagina .enlaces__item {
-  margin-bottom: var(--espacio-2);
+  margin-bottom: var(--espacio-1);
 }
 
 .pie_de_pagina .enlaces__enlace {
   display: flex;
   align-items: center;
-  gap: var(--espacio-2);
+  gap: var(--espacio-1);
   text-decoration: none;
   color: var(--texto-secundario);
   transition: color 0.3s ease;
@@ -72,8 +72,8 @@
 
 /* linkedin, github */
 .pie_de_pagina .enlaces__icono {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -87,9 +87,9 @@
 .pie_de_pagina__copyright {
   width: 100%;
   text-align: center;
-  margin-top: var(--espacio-6);
-  padding-top: var(--espacio-4);
-  border-top: 1px solid var(--fondo-terciario);
+  margin-top: var(--espacio-1);
+  padding-top: var(--espacio-1);
+  border-top: 1px solid var(--color-primario);
 }
 
 /* copyright paragraph */
@@ -117,6 +117,6 @@
 @media (min-width: 769px) {
   .pie_de_pagina {
     justify-content: center; /* Cambia de space-around a center */
-    gap: 4rem; /* Aumenta el espacio entre columnas */
+    gap: 2rem; /* Aumenta el espacio entre columnas */
   }
 }
