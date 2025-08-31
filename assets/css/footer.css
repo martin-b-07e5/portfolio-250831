@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 0.5rem;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   background-color: var(--fondo-terciario);
 }
 
@@ -37,7 +37,7 @@
 /* es el ul de GitHub, LinkedIn */
 .pie_de_pagina .enlaces_redes {
   display: flex;
-  gap: var(--espacio-4);
+  gap: var(--espacio-1);
 }
 
 /* son lo ul */
