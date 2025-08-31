@@ -2,7 +2,121 @@
 
 /* ===== FOOTER ===== */
 .pie_de_pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
   background-color: var(--fondo-terciario);
-  padding: 1rem;
+}
+
+/* son los div (mis redes, contacto, secciones) */
+.pie_de_pagina__columna {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  justify-content: flex-start; /* Alinea al inicio verticalmente */
+  align-items: center;
+}
+
+/* son los h4 (mis redes, contacto, secciones) */
+.pie_de_pagina__titulo_columna {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-lg);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-1);
+}
+
+/* Específico para listas dentro del footer */
+.pie_de_pagina .enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* es el ul de GitHub, LinkedIn */
+.pie_de_pagina .enlaces_redes {
+  display: flex;
+  gap: var(--espacio-4);
+}
+
+/* son lo ul */
+.pie_de_pagina .enlaces_vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-1);
+}
+
+/* son lo li */
+.pie_de_pagina .enlaces__item {
+  margin-bottom: var(--espacio-1);
+}
+
+.pie_de_pagina .enlaces__enlace {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-1);
+  text-decoration: none;
+  color: var(--texto-secundario);
+  transition: color 0.3s ease;
+}
+
+.pie_de_pagina .enlaces__enlace_footer:hover {
+  color: var(--color-primario)
+}
+
+/* Para todos los anchors con esas clases dentro del footer */
+.pie_de_pagina .enlaces__enlace.enlaces__enlace_footer {
+  background-color: transparent;
+}
+
+/* linkedin, github */
+.pie_de_pagina .enlaces__icono {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Efecto hover para el icono */
+.pie_de_pagina .enlaces__icono:hover {
+  transform: scale(1.1); /* Agrandar ligeramente */
+  opacity: 0.8; /* Leve transparencia */
+}
+
+/* copyright */
+.pie_de_pagina__copyright {
+  width: 100%;
   text-align: center;
+  margin-top: var(--espacio-1);
+  padding-top: var(--espacio-1);
+  border-top: 1px solid var(--color-primario);
+}
+
+/* copyright paragraph */
+.pie_de_pagina__parrafo {
+  font-size: var(--texto-base);
+  color: var(--texto-secundario);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pie_de_pagina {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--espacio-6);
+  }
+
+  .pie_de_pagina .enlaces_redes {
+    justify-content: center;
+  }
+}
+
+/* Centrar el contenido del footer en pantallas grandes */
+@media (min-width: 769px) {
+  .pie_de_pagina {
+    justify-content: center; /* Cambia de space-around a center */
+    gap: 2rem; /* Aumenta el espacio entre columnas */
+  }
 }
