@@ -2,7 +2,104 @@
 
 /* ===== FOOTER ===== */
 .pie_de_pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 1rem;
   background-color: var(--fondo-terciario);
-  padding: 1rem;
+}
+
+/* son los div (mis redes, contacto, secciones) */
+.pie_de_pagina__columna {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+/* son los h4 (mis redes, contacto, secciones) */
+.pie_de_pagina__titulo_columna {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-lg);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-4);
+}
+
+/* Específico para listas dentro del footer */
+.pie_de_pagina .enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* es el ul de GitHub, LinkedIn */
+.pie_de_pagina .enlaces_redes {
+  display: flex;
+  gap: var(--espacio-4);
+}
+
+/* son lo ul */
+.pie_de_pagina .enlaces_vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-2);
+}
+
+/* son lo li */
+.pie_de_pagina .enlaces__item {
+  margin-bottom: var(--espacio-2);
+}
+
+.pie_de_pagina .enlaces__enlace {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-2);
+  text-decoration: none;
+  color: var(--texto-secundario);
+  transition: color 0.3s ease;
+}
+
+.pie_de_pagina .enlaces__enlace_footer:hover {
+  color: var(--link)
+}
+
+
+/* Para todos los anchors con esas clases dentro del footer */
+.pie_de_pagina .enlaces__enlace.enlaces__enlace_footer {
+  background-color: var(--fondo-terciario);
+}
+
+
+.pie_de_pagina .enlaces__icono {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.pie_de_pagina__copyright {
+  width: 100%;
   text-align: center;
+  margin-top: var(--espacio-6);
+  padding-top: var(--espacio-4);
+  border-top: 1px solid var(--fondo-terciario);
+}
+
+.pie_de_pagina__parrafo {
+  font-size: var(--texto-base);
+  color: var(--texto-secundario);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pie_de_pagina {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--espacio-6);
+  }
+
+  .pie_de_pagina .enlaces_redes {
+    justify-content: center;
+  }
 }

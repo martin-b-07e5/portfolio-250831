@@ -29,6 +29,7 @@
   --exito: #28a745;
   --error: #cb2431;
   --advertencia: #ffd33d;
+  --link: #0000FF; /* blue */
 
     /* ===== TIPOGRAFÍA ===== */
     /* uso: font-family: var(--fuente-principal); */

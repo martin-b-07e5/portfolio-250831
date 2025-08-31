@@ -19,6 +19,13 @@
   /* border-radius: var(--radio-lg); */
 }
 
+.articulo.proyectos .articulo__titulo {
+  font-weight: var(--peso-bold);
+  font-size: var(--texto-4xl);
+  color: var(--texto-primario);
+  margin-bottom: var(--espacio-2);
+}
+
 .contenedor_tarjetas_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
