@@ -12,7 +12,7 @@
   height: 40px; /* Reduce altura */
   top: 0;
   left: 0;
-  background-color: var(--fondo-primario-transparente);
+  background-color: var(--fondo-terciario);
 }
 
 #proyectos {
