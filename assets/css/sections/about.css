@@ -24,7 +24,8 @@
   align-items: center;
   gap: var(--espacio-8);
   padding: var(--espacio-6);
-  background: var(--fondo-secundario);
+  /* background: var(--fondo-secundario); */
+  background: green;
   border-radius: var(--radio-lg);
   border: 1px solid var(--fondo-terciario);
 }
